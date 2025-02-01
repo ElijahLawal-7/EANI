@@ -131,3 +131,13 @@
       padding: 6px 12px;
     }
   }
+
+  /* Adjust for larger screens */
+@media (min-width: 1024px) {
+  .slidery-container {
+      aspect-ratio: 21 / 9; /* Wider and shorter aspect ratio for desktops */
+      max-width: 1300px; /* Reduce the width for large screens */
+      margin-left: auto;
+      margin-right: auto;
+  }
+}

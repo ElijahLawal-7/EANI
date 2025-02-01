@@ -43,18 +43,13 @@ h6 {
   position: relative;
   font-size: 1.5rem; /* Adjust as needed */
   white-space: nowrap;
-  background: #f9f9f9; /* Optional: adds a background to make text more readable */
+  width: 100vw;
 }
 
 h6 span {
-  display: inline-block;
-  animation: marquee 6s linear infinite; /* Adjust duration for speed */
-}
-
-h6 span::after {
-  content: " "; /* Ensures padding for seamless animation */
-  display: inline-block;
-  width: 100%;
+  display: block;
+  width: 120%; /* Ensure enough width for smooth transition */
+  animation: marquee 8s linear infinite; /* Adjust duration for speed */
 }
 
 @keyframes marquee {
@@ -63,6 +58,20 @@ h6 span::after {
   }
   100% {
     transform: translateX(-100%);
+  }
+}
+
+@media (min-width: 1024px) {
+  h6 {
+    font-size: 2rem;
+    white-space: normal; /* Allow text to wrap if needed */
+  }
+
+  h6 span {
+    animation: none; /* Disable the animation */
+    width: auto; /* Reset width to auto */
+    transform: none; /* Reset any transformations */
+    display: inline; /* Change display to inline if needed */
   }
 }
 
@@ -104,6 +113,29 @@ h6 span::after {
     line-height: calc( 1.4 * (1.175rem + (1.5 - 1.175) * ((100vw - 20rem) / (48 - 20))));
   }
 }
+
+/* Default styles for mobile */
+.team-item .item-image img {
+    width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure images cover the container */
+}
+
+/* Styles for larger screens (desktops) */
+@media (min-width: 1024px) {
+    .team-item .item-image {
+        width: 255px; /* Set a fixed width for the image container */
+        height: 310px; /* Set a fixed height for the image container */
+        overflow: hidden; /* Ensure images don't overflow */
+    }
+
+    .team-item .item-image img {
+        width: 100%; /* Ensure images fill the container */
+        height: 100%; /* Ensure images fill the container */
+        object-fit: cover; /* Maintain aspect ratio while covering the container */
+    }
+}
+
 /* Buttons */
 .btn {
   padding: 1rem 3rem;

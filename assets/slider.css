@@ -1,11 +1,10 @@
 .containerr {
-    /* if you only give width, all dimensions will be correct */
     width: 100%;
-    aspect-ratio: 16 / 9;
-    margin: 40px auto;
+    aspect-ratio: 16 / 9; /* Default aspect ratio for smaller screens */
+    margin: 0px auto;
+    margin-top: 37px;
     position: relative;
 }
-
 
 .carousel .containerr .sliderr .slide {
     position: relative;
@@ -37,12 +36,10 @@
     display: none;
 }
 
-
-
 .sliderr {
     width: 100%;
-    aspect-ratio: 16 / 9;
-    border-radius:  10px 10px 0 0;
+    aspect-ratio: 16 / 9; /* Default aspect ratio for smaller screens */
+    border-radius: 10px 10px 0 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: relative;
     overflow: hidden;
@@ -50,7 +47,8 @@
 
 .sliderr img {
     width: 100%;
-    height: auto;
+    height: 100%; /* Ensure the image fills the container */
+    object-fit: contain; /* Ensures the entire image is visible without cropping */
     position: absolute;
     top: 0;
     left: 0;
@@ -186,4 +184,14 @@
         padding: 7px;
     }
 
+}
+
+/* Adjust for larger screens */
+@media (min-width: 1024px) {
+    .containerr, .sliderr {
+        aspect-ratio: 18 / 9; /* Wider and shorter aspect ratio for desktops */
+        max-width: 1300px; /* Reduce the width for large screens */
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

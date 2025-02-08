@@ -36,6 +36,31 @@ body {
   font-size: 1.5rem;
   font-display: swap;
 }
+.contact-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-bottom: 10px;
+}
+
+.contact-button {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  background-color: #b41f97;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+  background-color: #b41f97;
+}
+
+.contact-button i {
+  margin-right: 10px;
+}
 
 h6 {
   text-align: center;
@@ -155,7 +180,7 @@ h6 span {
   border-radius: 3px;
 }
 .bg-primary {
-  background-color: #931a3f !important;
+  background-color: #b41f97 !important;
 }
 .bg-success {
   background-color: #f7ed4a !important;
@@ -171,8 +196,8 @@ h6 span {
 }
 .btn-primary,
 .btn-primary:active {
-  background-color: #931a3f !important;
-  border-color: #931a3f !important;
+  background-color: #b41f97 !important;
+  border-color: #b41f97 !important;
   color: #ffffff !important;
 }
 .btn-primary:hover,
@@ -180,14 +205,14 @@ h6 span {
 .btn-primary.focus,
 .btn-primary.active {
   color: #ffffff !important;
-  background-color: #520f23 !important;
-  border-color: #520f23 !important;
+  background-color: #b41f97 !important;
+  border-color: #b41f97 !important;
 }
 .btn-primary.disabled,
 .btn-primary:disabled {
   color: #ffffff !important;
-  background-color: #520f23 !important;
-  border-color: #520f23 !important;
+  background-color: #b41f97 !important;
+  border-color: #b41f97 !important;
 }
 .btn-secondary,
 .btn-secondary:active {
@@ -343,14 +368,14 @@ h6 span {
 .btn-primary-outline.focus,
 .btn-primary-outline.active {
   color: #ffffff;
-  background-color: #931a3f;
-  border-color: #931a3f;
+  background-color: #b41f97;
+  border-color: #b41f97;
 }
 .btn-primary-outline.disabled,
 .btn-primary-outline:disabled {
   color: #ffffff !important;
-  background-color: #931a3f !important;
-  border-color: #931a3f !important;
+  background-color: #b41f97 !important;
+  border-color: #b41f97 !important;
 }
 .btn-secondary-outline,
 .btn-secondary-outline:active {
@@ -487,7 +512,7 @@ h6 span {
   border-color: #ffffff;
 }
 .text-primary {
-  color: #931a3f !important;
+  color: #b41f97 !important;
 }
 .text-secondary {
   color: #ff3366 !important;
@@ -512,7 +537,7 @@ h6 span {
 }
 a.text-primary:hover,
 a.text-primary:focus {
-  color: #3c0b1a !important;
+  color: #b41f97 !important;
 }
 a.text-secondary:hover,
 a.text-secondary:focus {
@@ -570,8 +595,8 @@ a.text-black:focus {
   border-radius: 100px !important;
 }
 .mbr-gallery-filter li.active .btn {
-  background-color: #931a3f;
-  border-color: #931a3f;
+  background-color: #b41f97;
+  border-color: #b41f97;
   color: #ffffff;
 }
 .mbr-gallery-filter li.active .btn:focus {
@@ -582,7 +607,7 @@ a.text-black:focus {
 }
 a,
 a:hover {
-  color: #931a3f;
+  color: #b41f97;
 }
 .mbr-plan-header.bg-primary .mbr-plan-subtitle,
 .mbr-plan-header.bg-primary .mbr-plan-price-desc {
@@ -617,7 +642,7 @@ a:hover {
   font-size: 1.6rem;
 }
 blockquote {
-  border-color: #931a3f;
+  border-color: #b41f97;
 }
 /* Forms */
 .mbr-form .btn {
@@ -673,11 +698,11 @@ blockquote {
 /* Footer */
 .mbr-footer-content li::before,
 .mbr-footer .mbr-contacts li::before {
-  background: #931a3f;
+  background: #b41f97;
 }
 .mbr-footer-content li a:hover,
 .mbr-footer .mbr-contacts li a:hover {
-  color: #931a3f;
+  color: #b41f97;
 }
 .footer3 input[type="email"],
 .footer4 input[type="email"] {
@@ -719,7 +744,7 @@ blockquote {
 }
 .jq-selectbox li:hover,
 .jq-selectbox li.selected {
-  background-color: #931a3f;
+  background-color: #b41f97;
   color: #ffffff;
 }
 .jq-selectbox .jq-selectbox__trigger-arrow,
@@ -732,14 +757,14 @@ blockquote {
 .jq-selectbox:hover .jq-selectbox__trigger-arrow,
 .jq-number__spin.minus:hover:after,
 .jq-number__spin.plus:hover:after {
-  border-top-color: #931a3f;
-  border-bottom-color: #931a3f;
+  border-top-color: #b41f97;
+  border-bottom-color: #b41f97;
 }
 .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_default,
 .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current,
 .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div.xdsoft_current {
   color: #ffffff !important;
-  background-color: #931a3f !important;
+  background-color: #b41f97 !important;
   box-shadow: none !important;
 }
 .xdsoft_datetimepicker .xdsoft_calendar td:hover,
@@ -1451,8 +1476,8 @@ section.lazy-placeholder:after {
 .cid-saNyKTIjS6 {
   padding-top: 45px;
   padding-bottom: 45px;
-  background-color: #931a3f;
-  background: linear-gradient(45deg, #931a3f, #232323);
+  background-color: #b41f97;
+  background: linear-gradient(45deg, #b41f97, #232323);
 }
 @media (min-width: 992px) {
   .cid-saNyKTIjS6 .mbr-figure {
@@ -1637,11 +1662,11 @@ section.lazy-placeholder:after {
   top: 0;
   width: 100%;
   height: 100%;
-  background: #931a3f;
+  background: #b41f97;
   opacity: 0;
   -webkit-transition: 0.2s opacity ease-in-out;
   transition: 0.2s opacity ease-in-out;
-  background: linear-gradient(to left, #931a3f, #45505b) !important;
+  background: linear-gradient(to left, #b41f97, #45505b) !important;
 }
 .cid-saNHB57UL5 .mbr-gallery-item > div {
   position: relative;
@@ -1670,17 +1695,17 @@ section.lazy-placeholder:after {
   left: 0;
   z-index: -1;
   position: absolute;
-  background: #931a3f !important;
+  background: #b41f97 !important;
   opacity: 0.7;
   -webkit-transition: 0.2s background ease-in-out;
   transition: 0.2s background ease-in-out;
-  background: linear-gradient(to left, #931a3f, #45505b) !important;
+  background: linear-gradient(to left, #b41f97, #45505b) !important;
 }
 .cid-saNLHnKeJD {
   padding-top: 90px;
   padding-bottom: 90px;
-  background-color: #931a3f;
-  background: linear-gradient(45deg, #931a3f, #cccccc);
+  background-color: #b41f97;
+  background: linear-gradient(45deg, #b41f97, #cccccc);
 }
 .cid-saNLHnKeJD .mbr-section-subtitle {
   color: #767676;
@@ -2942,7 +2967,7 @@ section.lazy-placeholder:after {
 }
 .cid-saNsEdzrTP .nav-link:hover,
 .cid-saNsEdzrTP .dropdown-item:hover {
-  color: #7f1933 !important;
+  color: #b41f97 !important;
 }
 .cid-sboEkdM1At .modal-body .close {
   background: #1b1b1b;

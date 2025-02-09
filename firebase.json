@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "EANI",
+    "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",
